@@ -1,0 +1,7 @@
+{
+  "name": "getFirstWord",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "word": "apple",
+    "phonetic": "/ˈæpəl/",
+    "meaning": {
+      "partOfSpeech": "n.",
+      "translation": "苹果",
+      "example": "I like to eat apples.",
+      "synonym": "fruit"
+    }
+  },
+  {
+    "word": "book",
+    "phonetic": "/bʊk/",
+    "meaning": {
+      "partOfSpeech": "n.",
+      "translation": "书",
+      "example": "This book is very interesting.",
+      "synonym": "volume"
+    }
+  },
+  {
+    "word": "car",
+    "phonetic": "/kɑːr/",
+    "meaning": {
+      "partOfSpeech": "n.",
+      "translation": "汽车",
+      "example": "He drives a fast car.",
+      "synonym": "automobile"
+    }
+  },
+  {
+    "word": "dog",
+    "phonetic": "/dɔːɡ/",
+    "meaning": {
+      "partOfSpeech": "n.",
+      "translation": "狗",
+      "example": "My dog is very friendly.",
+      "synonym": "puppy"
+    }
+  },
+  {
+    "word": "eat",
+    "phonetic": "/iːt/",
+    "meaning": {
+      "partOfSpeech": "v.",
+      "translation": "吃",
+      "example": "I eat breakfast every morning.",
+      "synonym": "consume"
+    }
+  },
+  {
+    "word": "fast",
+    "phonetic": "/fæst/",
+    "meaning": {
+      "partOfSpeech": "adj.",
+      "translation": "快的",
+      "example": "He runs very fast.",
+      "synonym": "quick"
+    }
+  },
+  {
+    "word": "good",
+    "phonetic": "/ɡʊd/",
+    "meaning": {
+      "partOfSpeech": "adj.",
+      "translation": "好的",
+      "example": "This is a good idea.",
+      "synonym": "excellent"
+    }
+  },
+  {
+    "word": "house",
+    "phonetic": "/haʊs/",
+    "meaning": {
+      "partOfSpeech": "n.",
+      "translation": "房子",
+      "example": "They live in a big house.",
+      "synonym": "home"
+    }
+  },
+  {
+    "word": "jump",
+    "phonetic": "/dʒʌmp/",
+    "meaning": {
+      "partOfSpeech": "v.",
+      "translation": "跳",
+      "example": "The rabbit can jump high.",
+      "synonym": "leap"
+    }
+  },
+  {
+    "word": "like",
+    "phonetic": "/laɪk/",
+    "meaning": {
+      "partOfSpeech": "v.",
+      "translation": "喜欢",
+      "example": "She likes to sing.",
+      "synonym": "love"
+    }
+  },
+  {
+    "word": "music",
+    "phonetic": "/ˈmjuːzɪk/",
+    "meaning": {
+      "partOfSpeech": "n.",
+      "translation": "音乐",
+      "example": "I enjoy listening to music.",
+      "synonym": "melody"
+    }
+  },
+  {
+    "word": "new",
+    "phonetic": "/njuː/",
+    "meaning": {
+      "partOfSpeech": "adj.",
+      "translation": "新的",
+      "example": "He bought a new car.",
+      "synonym": "fresh"
+    }
+  },
+  {
+    "word": "open",
+    "phonetic": "/ˈoʊpən/",
+    "meaning": {
+      "partOfSpeech": "v.",
+      "translation": "打开",
+      "example": "Please open the door.",
+      "synonym": "unlock"
+    }
+  },
+  {
+    "word": "run",
+    "phonetic": "/rʌn/",
+    "meaning": {
+      "partOfSpeech": "v.",
+      "translation": "跑",
+      "example": "They run every morning.",
+      "synonym": "sprint"
+    }
+  },
+  {
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "meaning": {
+      "partOfSpeech": "n.",
+      "translation": "学校",
+      "example": "I go to school by bike.",
+      "synonym": "educational institution"
+    }
+  },
+  {
+    "word": "sleep",
+    "phonetic": "/sliːp/",
+    "meaning": {
+      "partOfSpeech": "v.",
+      "translation": "睡觉",
+      "example": "I sleep for 8 hours.",
+      "synonym": "rest"
+    }
+  },
+  {
+    "word": "time",
+    "phonetic": "/taɪm/",
+    "meaning": {
+      "partOfSpeech": "n.",
+      "translation": "时间",
+      "example": "What time is it?",
+      "synonym": "hour"
+    }
+  },
+  {
+    "word": "water",
+    "phonetic": "/ˈwɔːtər/",
+    "meaning": {
+      "partOfSpeech": "n.",
+      "translation": "水",
+      "example": "We need to drink water.",
+      "synonym": "liquid"
+    }
+  },
+  {
+    "word": "write",
+    "phonetic": "/raɪt/",
+    "meaning": {
+      "partOfSpeech": "v.",
+      "translation": "写",
+      "example": "She can write poems.",
+      "synonym": "compose"
+    }
+  },
+  {
+    "word": "yellow",
+    "phonetic": "/ˈjeloʊ/",
+    "meaning": {
+      "partOfSpeech": "adj.",
+      "translation": "黄色的",
+      "example": "The sun is yellow.",
+      "synonym": "golden"
+    }
+  },
+ {
+    "word": "cat",
+    "phonetic": "/kæt/",
+    "meaning": {
+      "partOfSpeech": "n.",
+      "translation": "猫",
+      "example": "The cat is sleeping on the sofa.",
+      "synonym": "feline"
+    }
+  },
+  {
+    "word": "play",
+    "phonetic": "/pleɪ/",
+    "meaning": {
+      "partOfSpeech": "v.",
+      "translation": "玩",
+      "example": "Children like to play in the park.",
+      "synonym": "recreate"
+    }
+  }
+]

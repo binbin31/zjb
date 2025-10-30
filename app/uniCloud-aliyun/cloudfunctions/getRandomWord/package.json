@@ -1,0 +1,7 @@
+{
+  "name": "getRandomWord",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

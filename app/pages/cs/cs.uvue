@@ -1,0 +1,59 @@
+<template>
+  <!-- 页面容器：纯白背景，全屏 -->
+  <view class="page-container">
+    <!-- 文字容器：竖向排列，居中 -->
+    <view class="text-container">
+      <text class="word">文</text>
+      <text class="word">字</text>
+    </view>
+  </view>
+</template>
+
+<style scoped>
+/* 页面容器：全屏纯白背景 */
+.page-container {
+  width: 100%;
+  height: 100vh; /* 占满整个屏幕高度 */
+  background-color: #ffffff; /* 纯白背景 */
+  display: flex; /* 开启flex布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+
+/* 文字容器：竖向排列 */
+.text-container {
+  display: flex;
+  flex-direction: column; /* 竖向排列子元素 */
+  align-items: center; /* 子元素水平居中 */
+  /* 动画：延迟2秒后，0.5秒内从完全显示到完全透明 */
+  animation: fadeOut 0.5s ease-in-out 2s forwards; 
+}
+
+/* 单个文字样式 */
+.word {
+  font-size: 60rpx; /* 文字大小（rpx适配不同屏幕） */
+  margin: 20rpx 0; /* 上下间距 */
+}
+
+/* 淡出动画定义 */
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* 初始完全显示 */
+  }
+  100% {
+    opacity: 0; /* 结束完全透明 */
+  }
+}
+</style>
+
+<script>
+export default {
+  onLoad() {
+    // 可选：如果需要动画结束后自动返回上一页，可添加定时器
+    setTimeout(() => {
+      // 2秒延迟 + 0.5秒动画 = 2.5秒后返回
+      uni.navigateBack();
+    }, 2500);
+  }
+};
+</script>

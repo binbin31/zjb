@@ -1,0 +1,1 @@
+{"bsonType":"object","required":["groupSize","currentGroupIndex","learnedWords"],"properties":{"groupSize":{"bsonType":"number","default":10},"currentGroupIndex":{"bsonType":"number","default":0},"learnedWords":{"bsonType":"array","items":{"bsonType":"string"},"description":"已掌握的单词列表"},"_createTime":{"bsonType":"date"},"_updateTime":{"bsonType":"date"}}}

@@ -1,0 +1,140 @@
+<template>
+  <view class="page-container">
+    <!-- 第一组：图片 -->
+    <view class="text-group group1">
+      <image src="/pages/images/danci.png" mode="" class="logo"></image>
+    </view>
+
+    <!-- 第二组：带空心圆圈的“背背”+“单词” -->
+    <view class="text-group group2">
+      <!-- 第一个“背”字：空心圆圈包裹 -->
+      <view class="circle-container">
+        <text class="word1">背</text>
+      </view>
+      <!-- 第二个“背”字：空心圆圈包裹 -->
+      <view class="circle-container">
+        <text class="word1">背</text>
+      </view>
+      <!-- 原有的“单词” -->
+      <text class="word">单</text>
+      <text class="word">词</text>
+    </view>
+  </view>
+</template>
+
+<style scoped>
+.page-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  animation: pageFadeInOut 1s ease-in-out forwards;
+}
+
+.text-group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 空心圆圈容器：包裹“背”字 */
+.circle-container {
+  width: 100rpx; /* 圆圈宽度（需大于文字大小） */
+  height: 100rpx; /* 圆圈高度（与宽度一致，确保正圆） */
+  border: 3rpx solid #ffb641; /* 空心圆圈边框（颜色与文字一致） */
+  border-radius: 50%; /* 圆角50%形成正圆 */
+  display: flex; /* 用于文字居中 */
+  justify-content: center; /* 水平居中文字 */
+  align-items: center; /* 垂直居中文字 */
+  margin: 10rpx 0; /* 圆圈之间的上下间距 */
+}
+
+/* “背”字样式（保持原有颜色和大小，去掉原margin避免间距过大） */
+.word1 {
+  font-size: 70rpx;
+  font-weight: 500;
+  color: #ffb641;
+}
+
+/* “单词”文字样式 */
+.word {
+  font-size: 60rpx;
+  margin: 15rpx 0;
+  font-weight: 500;
+}
+
+.logo {
+  height: 250rpx;
+  width: 250rpx;
+}
+
+/* 第一组动画 */
+.group1 {
+  opacity: 0;
+  animation: fadeInThenOut 1.5s ease-in-out 0.8s forwards;
+}
+
+/* 第二组动画 */
+.group2 {
+  opacity: 0;
+  animation: fadeInUpOut 2s ease-in-out 2.3s forwards;
+}
+
+/* 页面动画 */
+@keyframes pageFadeInOut {
+  0% { opacity: 1; }
+  30% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* 第一组淡入淡出 */
+@keyframes fadeInThenOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* 第二组淡入+上移淡出 */
+@keyframes fadeInUpOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+}
+</style>
+
+<script>
+export default {
+  onLoad() {
+    // 1. 提前预加载home页面（在动画执行时就加载，跳转时直接用）
+    uni.preloadPage({ url: '/pages/home/home' });
+
+    // 2. 动画结束后跳转（时间不变，仍为4.3秒）
+    setTimeout(() => {
+      // 关键：根据home是否为tab页选择API（二选一）
+      
+      // 若home是非tab页：用redirectTo（关闭当前页，避免页面栈堆积）
+      uni.redirectTo({ url: '/pages/home/home' });
+    }, 4300);
+  }
+};
+</script>

@@ -1,0 +1,7 @@
+{
+  "name": "getLearnedCount",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "clearMasteredWords",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

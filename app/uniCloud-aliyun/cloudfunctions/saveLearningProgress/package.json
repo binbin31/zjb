@@ -1,0 +1,7 @@
+{
+  "name": "saveLearningProgress",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

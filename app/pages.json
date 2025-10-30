@@ -1,0 +1,78 @@
+{
+  "pages": [
+    // 调整页面顺序，确保首页（index）为启动页
+	{
+		"path" : "pages/first/first",
+		"style" : 
+		{
+			"navigationBarTitleText" : ""
+		}
+	},
+    {
+      "path": "pages/home/home",
+      "style": {
+        "navigationBarTitleText": "首页", // 设置首页标题
+        "navigationStyle": "custom" // 隐藏原生导航栏（包括返回按钮）
+      }
+    },
+   
+    {
+      "path": "pages/learn/learn",
+      "style": {
+        "navigationBarTitleText": "学习页",
+        "navigationStyle": "custom" // 如需显示原生导航栏（带返回按钮），使用 default
+      }
+    },
+   
+   {
+     "path": "pages/neirfenlei/LearnedBooks",
+     "style": {
+       "navigationBarTitleText": "已学单词",
+       "navigationStyle": "custom" // 如需显示原生导航栏（带返回按钮），使用 default
+     }
+   },
+   
+   {
+     "path": "pages/neirfenlei/RecentLearned",
+     "style": {
+       "navigationBarTitleText": "已学单词",
+       "navigationStyle": "custom" // 如需显示原生导航栏（带返回按钮），使用 default
+     }
+   },
+   
+   {
+     "path": "pages/neirfenlei/AllLearned",
+     "style": {
+       "navigationBarTitleText": "已学单词",
+       "navigationStyle": "custom" // 如需显示原生导航栏（带返回按钮），使用 default
+     }
+   },
+   
+    {
+    	"path" : "pages/Review/Review",
+    	"style" : 
+    	{
+    		"navigationBarTitleText": "复习页",
+    		"navigationStyle": "custom" 
+    	}
+    },
+    {
+    	"path" : "pages/cs/cs",
+    	"style" : 
+    	{
+    		"navigationBarTitleText" : ""
+    	}
+    }
+    
+    
+   
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app x", // 全局导航栏标题（仅在 navigationStyle: default 时生效）
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom" // 全局隐藏原生导航栏（优先级低于页面级设置）
+  },
+  "uniIdRouter": {}
+}

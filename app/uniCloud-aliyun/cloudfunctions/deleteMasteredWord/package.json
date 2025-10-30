@@ -1,0 +1,7 @@
+{
+  "name": "deleteMasteredWord",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "saveMasteredWord",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
